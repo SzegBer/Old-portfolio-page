@@ -1,3 +1,6 @@
+
+// --------------- HTML COMPONENTS  ---------------------
+
 const header = `
   <header>
   <nav>
@@ -27,15 +30,13 @@ const footer = `
 </footer>
 `
 
-// --------------- MAIN PAGE elements
-
 const banner = `
   <section id="banner">
     <h1>hello.</h1>
     <p>A nevem <strong>Szegedi Bernadett</strong>, és junior frontend fejlesztő vagyok.</p>
     <p>15 évet dolgoztam nyomdaipari és marketing területen, mint projektmenedzser, most a kreatív megvalósítás irányába fejlődöm tovább.</p>
     <p>Szívszerelmem maradt a nyomdai kivitelezés is, ám most a digitális megoldások felé vettem az irányt.</p>
-    <button>munkáim</button>
+    <button id="portfolio-button">munkáim</button>
   </section>
 `
 
@@ -224,22 +225,31 @@ const swiperSlide = (data) => `
   </div>
 </div>
 `
+const swiperCommunicator = () => {
+  const swiper = new Swiper(".mySwiper", {
+    speed: 1000,
+    parallax: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+}
 
-
-
-
-
-// --------------- SELECTORS ------------------------------
+// --------------- SELECTORS ---------------------------
   
 const body = document.querySelector('body')
 
-// --------------- CLICK EVENT LISTENERS ------------------
+// --------------- CLICK EVENT LISTENERS ---------------
 
 const menuEventListener = () => {
   document.querySelector('ul').addEventListener('click', (e) => {
     
     const target = e.target.id
-    console.log(target)
 
     switch(target){
       case 'intro-menu':
@@ -255,27 +265,32 @@ const menuEventListener = () => {
         portfolioPageLoader();
         break;
       case 'contact-menu':
-        
+        contactPageLoader();
         break;
     }
   })
 }
 
-/*
-document.querySelectorAll('.more').forEach((button) => {
-  button.addEventListener('click', console.log('click'))
-})
-*/
+const pacsiEventListener = () => {
+
+  document.querySelectorAll('.more').forEach((button) => {
+    button.addEventListener('click', (e) => {
+      schoolsPageLoader();
+    })
+  })
+
+  document.querySelector('#portfolio-button').addEventListener('click', () => {
+    portfolioPageLoader();
+  })
+}
 
 // --------------- FETCH DATA --------------------------
 
 const getPortfolioData = async () => {
-const response = await fetch('./scripts/data/portfolio.JSON')
-const data = await response.json()
-return data
+  const response = await fetch('./scripts/data/portfolio.JSON')
+  const data = await response.json()
+  return data
 }
-
-
 
 // --------------- PAGE BUILDERS -----------------------
 
@@ -293,6 +308,7 @@ const mainPageLoader = () => {
 
   main.insertAdjacentHTML('afterbegin', strengths)
   main.insertAdjacentHTML('afterbegin', banner)
+  pacsiEventListener();
 }
 
 const schoolsPageLoader = () => {
@@ -312,32 +328,19 @@ const jobsPageLoader = () => {
 const portfolioPageLoader = async () => {
   fixPageElements()
   const main = document.querySelector('main')
-
   main.insertAdjacentHTML('afterbegin', swiperWrapper)
-
-  const swiper = new Swiper(".mySwiper", {
-    speed: 1000,
-    parallax: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-
+  swiperCommunicator();
   const swiperWrapperElement = document.querySelector('.swiper-wrapper')
   const data = await getPortfolioData()
-  console.log(data)
   for(i=0; i<data.length;i++){
     swiperWrapperElement.insertAdjacentHTML('afterbegin', swiperSlide(data[i]))
   }
 }
 
+const contactPageLoader = () => {
+  fixPageElements()
+}
+
+// --------------- ONLOADING --------------------------
 
 mainPageLoader();
-
-
-
