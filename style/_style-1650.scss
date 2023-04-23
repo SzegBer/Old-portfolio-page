@@ -1,0 +1,49 @@
+@media screen and (max-width: 1650px) {
+
+  header {
+
+
+    ul {
+      
+
+      li {
+
+      }
+    }
+  }
+
+
+  #banner {             // --- BANNER --- //
+
+    background-size: 450px !important;
+
+   // align-content: flex-start !important;
+
+    h1 {
+      margin: 0px  !important;
+    }
+
+    p {
+      margin: 20px 0px 0px 0px  !important;      
+      max-width: 400px !important;
+
+    }
+   
+    button {
+      margin: 50px auto 0px  !important;
+
+      &:hover {
+
+      }
+    }
+  }
+
+
+
+
+
+}
+
+
+
+

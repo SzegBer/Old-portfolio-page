@@ -1,0 +1,32 @@
+@media screen and (max-width: 1250px) {
+
+
+  #banner {             // --- BANNER --- //
+
+    background-size: 300px !important;
+
+    // align-content: flex-start !important;
+
+    h1 {
+      font-size: 100px !important;
+    }
+
+    p {
+      margin: 10px 0px 0px 0px !important; 
+      font-size: 16px !important;
+      max-width: 300px !important;
+
+    }
+   
+    button {
+      scale: 0.8;
+      margin: 30px auto 0px  !important;
+
+    }
+  }
+
+
+
+
+
+}
