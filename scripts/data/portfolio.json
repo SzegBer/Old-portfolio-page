@@ -3,80 +3,80 @@
     "title": "Szórólap",
     "subtitle": "digitális grafika",
     "paragraph": "Termékösszehasonlító szóróanyag teljeskörű tervezése a reklámeszköz.hu értékesítési folyamatainak elősegítésére, új termékcsalád bevezetésekor. A teljes koncepció kitalálása, a szöveges tartalom megírása és maga a grafika elkészítése is remek élmény volt.",
-    "git-page": "",
-    "git-repo": "",
+    "gitPage": "",
+    "gitRepo": "",
     "url": "/01.png"
   },
   {
     "title": "Termékkatalógus",
     "subtitle": "digitális grafika",
     "paragraph": "Az értékesítők és ügyfelek számára is szerettem volna egy átlátható és informatív segédanyagot, a termékportfólió megismeréséhez. A reklámeszköz.hu történetének első digitális prospektusait a legnépszerűbb termékcsaládokról készítettem el: a teljes koncepcióra, a szövegekre, és az illusztrációkra is nagyon büszke vagyok, a cég pedig a mai napig használja őket.",
-    "git-page": "",
-    "git-repo": "",
+    "gitPage": "",
+    "gitRepo": "",
     "url": "/02.png"
   },
   {
     "title": "Logótervezés",
     "subtitle": "sör sör sör sör!",
     "paragraph": "Egy kedves barátom néhány éve kitanulta a sörfőző mesterséget. Szívesen kísérletezget a különböző sörfajtákkal és ízekkel. Én meg szívesen kóstolgatom. Szülinapjára terveztem meg ezt a néhány logó variációt, melyekből címkéket is készítettem neki. Az italok nem kerülnek kereskedelmi forgalomba, kizárólag otthoni fogyasztásra készülnek.",
-    "git-page": "",
-    "git-repo": "",
+    "gitPage": "",
+    "gitRepo": "",
     "url": "/03.png"
   },
   {
     "title": "Slideshow",
     "subtitle": "digitális grafika",
     "paragraph": "A reklámeszköz.hu főoldalán megjelenő időszakos, animált slideshow hirdetések előkészítése réteges formátumban, Photoshopban.",
-    "git-page": "",
-    "git-repo": "",
+    "gitPage": "",
+    "gitRepo": "",
     "url": "/04.png"
   },
   {
     "title": "Logótervezés",
     "subtitle": "Mohács 500 logópályázathoz",
     "paragraph": "A Mohács500 logópályázatra benyújtott alkotásom",
-    "git-page": "",
-    "git-repo": "",
+    "gitPage": "",
+    "gitRepo": "",
     "url": "/05.png"
   },
   {
     "title": "Képeslap",
     "subtitle": "Nekem a Balaton a Riviéra",
     "paragraph": "Vidám Retro képeslap",
-    "git-page": "",
-    "git-repo": "",
+    "gitPage": "",
+    "gitRepo": "",
     "url": "/06.png"
   },
   {
     "title": "Arculattervezés",
     "subtitle": "logo és arculat",
     "paragraph": "Ha egyszer lesz éttermem, lehet, hogy szotyola bar lesz a neve.",
-    "git-page": "",
-    "git-repo": "",
+    "gitPage": "",
+    "gitRepo": "",
     "url": "/07.png"
   },
   {
     "title": "Web app",
     "subtitle": "saját backend server filekezeléssel",
     "paragraph": "Képek feltöltése és képgaléria. Használt rendszerek: HTML, CSS, JavaScript, Node.js",
-    "git-page": "",
-    "git-repo": "https://github.com/SzegBer/img-gallery-with-backend",
+    "gitPage": "",
+    "gitRepo": "<a href='https://github.com/SzegBer/img-gallery-with-backend'>Github</a>",
     "url": "/08.png"
   },
   {
     "title": "NASA API",
     "subtitle": "fetch",
     "paragraph": "A legelső ismerkedésem a fetch és APIk világával. Használt rendszerek: HTML, CSS, JavaScript, Node.js",
-    "git-page": "https://szegber.github.io/just4fun-askNasa/",
-    "git-repo": "https://github.com/SzegBer/just4fun-askNasa",
+    "gitPage": "<a href='https://szegber.github.io/just4fun-askNasa/'>Demo</a>",
+    "gitRepo": "<a href='https://github.com/SzegBer/just4fun-askNasa'>Github</a>",
     "url": "/09.png"
   },
   {
     "title": "Adatbázis olvasó",
     "subtitle": "egyszerű backend szerver felépítése",
     "paragraph": "Szöveges adatok lekérdezése és írása JSON fájlba egy egyszerű backend szerver megírásával. Használt rendszerek: HTML, CSS, JavaScript, Node.js",
-    "git-page": "https://szegber.github.io/a-simple-backend-server/",
-    "git-repo": "https://github.com/SzegBer/a-simple-backend-server",
+    "gitPage": "<a href='https://szegber.github.io/a-simple-backend-server/frontend/'>Demo</a>",
+    "gitRepo": "<a href='https://github.com/SzegBer/a-simple-backend-server'>Github</a>",
     "url": "/10.png"
   }
 ]

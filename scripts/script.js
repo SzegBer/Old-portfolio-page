@@ -131,7 +131,7 @@ const jobs = `
 
 const technologies = `
 <section id="technologies">
-<h2>ismeretek</h2>
+<h2>ismeretek ▼</h2>
   <article>
     <img src="style/imgs/tech-logo/HTML5_logo-2.svg" alt="html">
     <h3>html</h3>
@@ -195,20 +195,31 @@ const technologies = `
 </section>
 `
 
+const swiperWrapper = `
+<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+  <div class="swiper-wrapper"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+`
 
+const swiperSlide = (data) => `
+<div class="swiper-slide">
 
-const swiper = new Swiper(".mySwiper", {
-  speed: 600,
-  parallax: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+  <div class="parallax-bg" style="
+  background-image: url(/style/imgs/portfolio${data.url});
+  " data-swiper-parallax="-23%"></div>
+
+  <div class="title" data-swiper-parallax="-300">${data.title}</div>
+  <div class="subtitle" data-swiper-parallax="-200">${data.subtitle}</div>
+  <div class="text" data-swiper-parallax="-100">
+    <p>${data.paragraph}</p>
+    ${data.gitPage}
+    ${data.gitRepo}
+  </div>
+</div>
+`
 
 
 
@@ -221,7 +232,7 @@ const body = document.querySelector('body')
 // --------------- CLICK EVENT LISTENERS ------------------
 
 const menuEventListener = () => {
-  document.querySelector('ul').addEventListener('click', (e)=> {
+  document.querySelector('ul').addEventListener('click', (e) => {
     
     const target = e.target.id
     console.log(target)
@@ -237,7 +248,7 @@ const menuEventListener = () => {
         jobsPageLoader();
         break;
       case 'works-menu':
-        
+        portfolioPageLoader();
         break;
       case 'contact-menu':
         
@@ -251,6 +262,14 @@ document.querySelectorAll('.more').forEach((button) => {
   button.addEventListener('click', console.log('click'))
 })
 */
+
+// --------------- FETCH DATA --------------------------
+
+const getPortfolioData = async () => {
+const response = await fetch('./scripts/data/portfolio.JSON')
+const data = await response.json()
+return data
+}
 
 
 
@@ -286,11 +305,35 @@ const jobsPageLoader = () => {
   main.insertAdjacentHTML('afterbegin', jobs)
 }
 
+const portfolioPageLoader = async () => {
+  fixPageElements()
+  const main = document.querySelector('main')
+
+  main.insertAdjacentHTML('afterbegin', swiperWrapper)
+
+  const swiper = new Swiper(".mySwiper", {
+    speed: 1000,
+    parallax: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  const swiperWrapperElement = document.querySelector('.swiper-wrapper')
+  const data = await getPortfolioData()
+  console.log(data)
+  for(i=0; i<data.length;i++){
+    swiperWrapperElement.insertAdjacentHTML('afterbegin', swiperSlide(data[i]))
+  }
+}
 
 
-
-/*
 mainPageLoader();
-*/
+
 
 
