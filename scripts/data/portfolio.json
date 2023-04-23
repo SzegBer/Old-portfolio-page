@@ -58,7 +58,7 @@
   {
     "title": "Web app - képgaléria",
     "subtitle": "swiperrel és feltöltési űrlappal",
-    "paragraph": "Gyakorlás eredménye a projekt, ismerkedés a node.js-sel. Képnézegető és képfeltöltő oldal, melyhez a backend oldali filekezelésre saját scriptet írtam.<br><br>Használt rendszerek: HTML, CSS, JavaScript, Node.js<br><br>A demo oldalon az adatbázis nem hozzáférhető.",
+    "paragraph": "Gyakorlás eredménye a projekt, ismerkedés a node.js-sel. Képnézegető és képfeltöltő oldal, melyhez a backend oldali filekezelésre saját scriptet írtam.<br><br>Használt rendszerek: HTML, CSS, JavaScript, Node.js",
     "gitPage": "",
     "gitRepo": "<a target='_blank' href='https://github.com/SzegBer/img-gallery-with-backend'>Github</a>",
     "url": "/08.png"
@@ -72,7 +72,7 @@
     "url": "/09.png"
   },
   {
-    "title": "Adatbázis kezelés",
+    "title": "Adatbázis lekérdezés",
     "subtitle": "adatok lekérdezése és beküldése",
     "paragraph": "Ebben a gyakorló feladatban szöveges adatok lekérdezését és írását valósítom meg JSON fájlba egy egyszerű backend logika megírásával.<br><br>Használt rendszerek: HTML, CSS, JavaScript, Node.js<br><br>A demo oldalon az adatbázis nem hozzáférhető.",
     "gitPage": "<a target='_blank' href='https://szegber.github.io/a-simple-backend-server/frontend/'>Demo</a>",

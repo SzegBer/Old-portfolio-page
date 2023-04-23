@@ -15,9 +15,14 @@ const header = `
 const footer = `
 <footer>
   <h2>kontakt</h2>
-  <p>A gonosz spam robotok miatt email címemet és a telefonszámomat nem teszem nyílvánossá.<br>Elérhetőségeimet a linkedIn profilomon üzenve kérd el!</p>
+  <p>A gonosz spam robotok miatt email címemet és a telefonszámomat nem teszem nyílvánossá.<br>Kapcsolatba lépéshez kérlek üzenj linkedIn-en!</p>
   <ul>
-    <li><img src="style/imgs/icons/linkedin.svg" alt="linkedin"></li>
+    <a target='_blank' href='https://www.linkedin.com/in/rendicsek/'>
+      <li><img src="style/imgs/icons/linkedin.svg" alt="linkedin"></li>
+    </a>
+    <a target='_blank' href='https://github.com/SzegBer'>
+      <li><img src="style/imgs/icons/github.svg" alt="github"></li>
+    </a>
   </ul>
 </footer>
 `
@@ -61,7 +66,7 @@ const strengths = `
 const motivation = `
   <section id="motivation">
     <h2>motiváció</h2>
-    <p>Korábbi tapasztalataimat hasznosítva szeretnék egy olyan csapatban dolgozni, ahol a feladatok sokszínűsége és a kihívások megfűszerezik a mindennapokat, ahol a munkaadóm megbecsüli az emberi kapcsolatokat, partnerként szólítja meg a munkatársait, és konstruktív párbeszédekkel tekinthetünk együtt a kihívásokra.</p>
+    <p>Szerencsémre az elmúlt években rengeteg hozzám hasonló gondolkodású és kreatív emberrel dolgozhattam együtt, így csak a legritkább esetben éreztem a munkát tehernek. Sokkal inkább tekintettem rá, mint lehetőségre a tanuláshoz és a fejlődéshez, miközben remekül szórakozom, és kávézhatok is! A számomra ideális munkahelyen a feladatok összekötik az elemző és kreatív énemet, miközben egy energikus és jókedvű csapattal dolgozhatok együtt.</p>
     <img src="style/imgs/motivation.gif" alt="motivation">
   </section>
 `
@@ -91,26 +96,25 @@ const schools = `
 const jobs = `
 <section id="jobs">
   <h2>Munkatapasztalat</h2>
-  <p>A szakközépiskolát befejezve nem tanultam tovább, fontosabbnak tartottam a tapasztalatszerzést, és kialakítani az anyagi függetlenségem.</p>
-  <p>A korai évek az útkeresésről szóltak. Nagyon élveztem a kis létszámú cégek családias hangulatát, amelyek segítettek alapvető képességeim felismerésében.
-  Később nyomdaipari területen helyezkedtem el, ahol korábbi tapasztalataimat hasznosítva már párhuzamosan több pozícióban is végeztem összetett feladatokat, ahogy azok a cég életében adódtak vagy szükségessé váltak. A grafikai tervezésre és a termékfejlesztésre egyre nagyobb szenvedéllyel tekintettem.</p>
-  <p>Szerencsémre az elmúlt években rengeteg hozzám hasonló gondolkodású és kreatív emberrel dolgozhattam együtt, így csak a legritkább esetben éreztem a munkát tehernek. Sokkal inkább tekintettem rá, mint lehetőségre a tanuláshoz és a fejlődéshez, miközben remekül is szórakozom. A számomra ideális munkahelyen a feladatok összekötik az elemző és kreatív énemet, miközben egy energikus csapattal dolgozhatok együtt.</p>
+  <p>A szakközépiskolát befejezve nem tanultam tovább, fontosabbnak tartottam a tapasztalatszerzést, és kialakítani az anyagi függetlenségem.
+  A korai évek az útkeresésről szóltak. Nagyon élveztem a kis létszámú cégek családias hangulatát, amelyek segítettek alapvető képességeim felismerésében.</p>
+  <p>Később nyomdaipari területen helyezkedtem el, ahol korábbi tapasztalataimat hasznosítva már párhuzamosan több pozícióban is végeztem összetett feladatokat, ahogy azok a cég életében adódtak vagy szükségessé váltak. A grafikai tervezésre és a termékfejlesztésre egyre nagyobb szenvedéllyel tekintettem.</p>
   <details>            
     <summary><h3>Reklámeszköz.hu</h3></summary>
     <h4>2012 - 2022<br>digitális nyomda & kiállítási eszközök gyártása és forgalmazása</h4>
     <p>Az évek alatt több pozícióban is dolgoztam párhuzamosan.
-    Állandó szerepeim: <strong>projekt menedzser, értékesítési vezető, beszerzési vezető, operatív ügyvezető, termékfelelős. </strong>Alkalmanként pedig a kétkezi munkát sem vetettem meg: <strong>dekoratőrként</strong> is segítettem a projekteket, valamint marketing vezetőnket támigattam <strong>grafikai anyagok előállításával.</strong>
+    Állandó szerepeim: <strong>projekt menedzser, értékesítési vezető, beszerzési vezető, operatív ügyvezető, termékfelelős. </strong>Alkalmanként pedig a kétkezi munkát sem vetettem meg: <strong>dekoratőrként</strong> is segítettem a projekteket, valamint marketing vezetőnket támogattam <strong>grafikai anyagok előállításával.</strong>
     </p>
   </details>
   <details>            
     <summary><h3>DisplayHáz</h3></summary>
     <h4>2009 - 2012<br>digitális nyomda & kiállítási eszközök gyártása és forgalmazása</h4>
-    <p>Az akkor kis méretű családi cégben több szerepkörben is volt lehetőség bizonyítani. Elsősorban nyomdai <strong>projekt menedzserként</strong> dolgoztam, és azokkal kapcsolatos <strong>pénzügyi adminisztratív feladatokat</strong> láttam el. Saját műhelyünkben egyedi reklámberendezések gyártásában is részt vettem a <strong>tervezéstől a tesztelésig.</strong> A weboldal megújításánál pedig a tartalom feltöltés és ahhoz szükséges <strong>grafikai munkákat</strong> vállaltam önként.
+    <p>Az akkor még kis családi cégben több szerepkörben is volt lehetőség bizonyítani. Elsősorban nyomdai <strong>projekt menedzserként</strong> dolgoztam, és a területtel kapcsolatos <strong>pénzügyi adminisztratív feladatokat</strong> láttam el. Saját műhelyben egyedi reklámberendezések gyártásában is részt vettem a <strong>tervezéstől a tesztelésig.</strong> A weboldal megújításánál pedig a fejlesztővel egyeztetést, a tartalom feltöltést és ahhoz szükséges <strong>grafikai munkákat</strong> vállaltam önként.
     </p>
   </details>
   <details>
     <summary><h3>Siffredi Productions</h3></summary>
-    <h4>2009<br>filmgyártás és forgalmazás</h4>
+    <h4>2009<br>filmgyártás és forgalmazás külföldi piacra</h4>
     <p>A budapesti irodában elsősorban <strong>személyi asszisztensként</strong>, utazások szervezésével és ad-hoc feladatok megoldásával foglalkoztam. A cég <strong>pénzügyi asszisztenseként</strong> minden napos volt a könyvelővel egyeztetés, és a banki ügyintézés.
     </p>
   </details>
