@@ -40,18 +40,17 @@ body {
     background-image: url(imgs/outline-we.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 600px;
+    background-size: 700px;
     position: absolute;
-    z-index: -1;
-    top: 100px;
-    left: -50px;
+    z-index: 1;
+    top: 300px;
+    left: -650px;
   }
 
   background-image: url(imgs/blob.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 1300px;
   background-position: 75vw 5vw;
-
 }
 
 header {
@@ -187,7 +186,7 @@ main {
     h2 {
       flex-basis: 100%;
       font-family: 'Nunito', sans-serif;
-      font-size: 70px;
+      font-size: 50px;
       text-align: left;
       padding-left: 100px;
       margin: 50px 0px 100px;
@@ -268,7 +267,7 @@ main {
     h2 {
       grid-area: h2;
       font-family: 'Nunito', sans-serif;
-      font-size: 70px;
+      font-size: 50px;
       text-align: right;
       padding-right: 50px;
       margin: 50px 0px 50px;
@@ -287,6 +286,8 @@ main {
       grid-area: img;
       width: 400px;
     }
+
+
   }
 
   #schools {            // --- SCHOOLS --- //
@@ -340,6 +341,7 @@ main {
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 0px 40px;
+    min-height: 70vh;
     
 
     h2 {
@@ -367,6 +369,8 @@ main {
       margin: 40px 0px;
       cursor: pointer;
       text-align: center;
+
+      border: 15px solid transparent;
       
       summary {
 
@@ -410,6 +414,50 @@ main {
 
   }
 
+  #technologies {          // --- TECHNOLOGIES --- //
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0px;
+
+    h2 {
+      flex-basis: 100%;
+      font-family: 'Nunito', sans-serif;
+      font-size: 50px;
+      text-align: left;
+      padding-left: 100px;
+      margin: 50px 0px 100px;
+    }
+
+    article {
+      flex-basis: 15%;
+      transition: 0.3s;
+      margin: 10px;
+
+      &:hover {
+        transform: translateY(-25px);
+        transition: 0.3s;
+      }
+
+      img {
+        width: 120px;
+        height: 120px;
+        display: block;
+        margin: auto;
+      }
+
+      h3 {
+        font-family: 'Nunito', sans-serif;
+        font-size: 25px;
+        text-align: center;
+        margin: 15px 0px;
+      }
+
+    }
+  }
+  
+
+
 
 }
 
@@ -422,6 +470,9 @@ footer {
   background-color: var(--grey);
   border-bottom: 10px solid var(--yellow);
 
+  position: relative;
+  overflow: hidden;
+
   h2 {
     font-family: 'Nunito', sans-serif;
     font-size: 40px;
@@ -433,7 +484,6 @@ footer {
     font-family: 'Sarala', sans-serif;
     font-size: 18px;
     text-align: center;
-
   }
 
   ul {
@@ -453,6 +503,7 @@ footer {
       }
     }
   }
+
 }
 
 

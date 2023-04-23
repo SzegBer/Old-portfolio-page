@@ -35,7 +35,7 @@ body {
   overflow-x: hidden;
   background-image: url(imgs/blob.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 1300px;
   background-position: 75vw 5vw;
 }
 body::before {
@@ -45,11 +45,11 @@ body::before {
   background-image: url(imgs/outline-we.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 600px;
+  background-size: 700px;
   position: absolute;
-  z-index: -1;
-  top: 100px;
-  left: -50px;
+  z-index: 1;
+  top: 300px;
+  left: -650px;
 }
 
 header {
@@ -155,7 +155,7 @@ main #strengths {
 main #strengths h2 {
   flex-basis: 100%;
   font-family: "Nunito", sans-serif;
-  font-size: 70px;
+  font-size: 50px;
   text-align: left;
   padding-left: 100px;
   margin: 50px 0px 100px;
@@ -219,7 +219,7 @@ main #motivation {
 main #motivation h2 {
   grid-area: h2;
   font-family: "Nunito", sans-serif;
-  font-size: 70px;
+  font-size: 50px;
   text-align: right;
   padding-right: 50px;
   margin: 50px 0px 50px;
@@ -269,6 +269,7 @@ main #jobs {
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 0px 40px;
+  min-height: 70vh;
 }
 main #jobs h2 {
   flex-basis: 100%;
@@ -291,6 +292,7 @@ main #jobs details {
   margin: 40px 0px;
   cursor: pointer;
   text-align: center;
+  border: 15px solid transparent;
 }
 main #jobs details summary h3 {
   font-family: "Nunito", sans-serif;
@@ -313,6 +315,41 @@ main #jobs details:hover {
   border: 15px solid var(--yellow);
   border-radius: 15px;
 }
+main #technologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 0px;
+}
+main #technologies h2 {
+  flex-basis: 100%;
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  text-align: left;
+  padding-left: 100px;
+  margin: 50px 0px 100px;
+}
+main #technologies article {
+  flex-basis: 15%;
+  transition: 0.3s;
+  margin: 10px;
+}
+main #technologies article:hover {
+  transform: translateY(-25px);
+  transition: 0.3s;
+}
+main #technologies article img {
+  width: 120px;
+  height: 120px;
+  display: block;
+  margin: auto;
+}
+main #technologies article h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  margin: 15px 0px;
+}
 
 footer {
   width: 100vw;
@@ -321,6 +358,8 @@ footer {
   padding: 30px 15vw;
   background-color: var(--grey);
   border-bottom: 10px solid var(--yellow);
+  position: relative;
+  overflow: hidden;
 }
 footer h2 {
   font-family: "Nunito", sans-serif;
