@@ -33,50 +33,50 @@
   },
   {
     "title": "Logótervezés",
-    "subtitle": "Mohács 500 logópályázathoz",
-    "paragraph": "A Mohács500 logópályázatra benyújtott alkotásom",
+    "subtitle": "Mohács 500 logó és kisarculat pályázathoz",
+    "paragraph": "A Mohács500 logópályázatra benyújtott alkotásom. 2026-ban a Mohácsi csata 500. évfordulója alkalmából jelentős eseménysorozatra készül Mohács város önkormányzata. Az esemény főbb arculati elemeinek kidolgozása tárgyában kiírt pályázatra neveztem az itt látható logóval, mely a városban található Nemzeti Emlékhelyet jeleníti meg.",
     "gitPage": "",
     "gitRepo": "",
     "url": "/05.png"
   },
   {
     "title": "Képeslap",
-    "subtitle": "Nekem a Balaton a Riviéra",
-    "paragraph": "Vidám Retro képeslap",
+    "subtitle": "... Nekem a Balaton a Riviéra",
+    "paragraph": "Télen, amikor kevés a szín és hiányzik a fagylalt, akkor kinézek egy vidám színpalettát, és alkotok valami felpezsdítőt. Így született meg a balatoni vidám retro képeslap ötlete.",
     "gitPage": "",
     "gitRepo": "",
     "url": "/06.png"
   },
   {
     "title": "Arculattervezés",
-    "subtitle": "logo és arculat",
+    "subtitle": "gakorlás, logo és arculat",
     "paragraph": "Ha egyszer lesz éttermem, lehet, hogy szotyola bar lesz a neve.",
     "gitPage": "",
     "gitRepo": "",
     "url": "/07.png"
   },
   {
-    "title": "Web app",
-    "subtitle": "saját backend server filekezeléssel",
-    "paragraph": "Képek feltöltése és képgaléria. Használt rendszerek: HTML, CSS, JavaScript, Node.js",
+    "title": "Web app - képgaléria",
+    "subtitle": "swiperrel és feltöltési űrlappal",
+    "paragraph": "Gyakorlás eredménye a projekt, ismerkedés a node.js-sel. Képnézegető és képfeltöltő oldal, melyhez a backend oldali filekezelésre saját scriptet írtam.<br><br>Használt rendszerek: HTML, CSS, JavaScript, Node.js<br><br>A demo oldalon az adatbázis nem hozzáférhető.",
     "gitPage": "",
-    "gitRepo": "<a href='https://github.com/SzegBer/img-gallery-with-backend'>Github</a>",
+    "gitRepo": "<a target='_blank' href='https://github.com/SzegBer/img-gallery-with-backend'>Github</a>",
     "url": "/08.png"
   },
   {
     "title": "NASA API",
-    "subtitle": "fetch",
-    "paragraph": "A legelső ismerkedésem a fetch és APIk világával. Használt rendszerek: HTML, CSS, JavaScript, Node.js",
-    "gitPage": "<a href='https://szegber.github.io/just4fun-askNasa/'>Demo</a>",
-    "gitRepo": "<a href='https://github.com/SzegBer/just4fun-askNasa'>Github</a>",
+    "subtitle": "Astronomy Picture of The Day",
+    "paragraph": "A népszerű képnézegető NASA API-hoz készítettem egy könnyen navigálható oldalt. A projekt a legelső ismerkedésem a fetch és APIk világával.<br><br>Használt rendszerek: HTML, CSS, JavaScript, Node.js",
+    "gitPage": "<a target='_blank' href='https://szegber.github.io/just4fun-askNasa/'>Demo</a>",
+    "gitRepo": "<a target='_blank' href='https://github.com/SzegBer/just4fun-askNasa'>Github</a>",
     "url": "/09.png"
   },
   {
-    "title": "Adatbázis olvasó",
-    "subtitle": "egyszerű backend szerver felépítése",
-    "paragraph": "Szöveges adatok lekérdezése és írása JSON fájlba egy egyszerű backend szerver megírásával. Használt rendszerek: HTML, CSS, JavaScript, Node.js",
-    "gitPage": "<a href='https://szegber.github.io/a-simple-backend-server/frontend/'>Demo</a>",
-    "gitRepo": "<a href='https://github.com/SzegBer/a-simple-backend-server'>Github</a>",
+    "title": "Adatbázis kezelés",
+    "subtitle": "adatok lekérdezése és beküldése",
+    "paragraph": "Ebben a gyakorló feladatban szöveges adatok lekérdezését és írását valósítom meg JSON fájlba egy egyszerű backend logika megírásával.<br><br>Használt rendszerek: HTML, CSS, JavaScript, Node.js<br><br>A demo oldalon az adatbázis nem hozzáférhető.",
+    "gitPage": "<a target='_blank' href='https://szegber.github.io/a-simple-backend-server/frontend/'>Demo</a>",
+    "gitRepo": "<a target='_blank' href='https://github.com/SzegBer/a-simple-backend-server'>Github</a>",
     "url": "/10.png"
   }
 ]
