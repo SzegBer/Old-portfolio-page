@@ -208,34 +208,6 @@ main #strengths article button.more:hover {
   transition: 0.3s;
   cursor: pointer;
 }
-main #motivation {
-  margin: 50px 0px;
-  padding: 0px 100px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 0.5fr 1.5fr;
-  grid-template-areas: "img h2" "img p";
-}
-main #motivation h2 {
-  grid-area: h2;
-  font-family: "Nunito", sans-serif;
-  font-size: 50px;
-  text-align: right;
-  padding-right: 50px;
-  margin: 50px 0px 50px;
-}
-main #motivation p {
-  grid-area: p;
-  font-family: "Sarala", sans-serif;
-  font-size: 18px;
-  text-align: right;
-  padding-right: 50px;
-  padding-left: 40px;
-}
-main #motivation img {
-  grid-area: img;
-  width: 400px;
-}
 main #schools {
   margin-top: 50px;
 }
@@ -262,6 +234,41 @@ main #schools div:hover {
 }
 main #schools div:hover span {
   color: var(--cyan);
+}
+main #technologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 0px;
+}
+main #technologies h2 {
+  flex-basis: 100%;
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  text-align: left;
+  padding-left: 100px;
+  margin: 50px 0px 100px;
+}
+main #technologies article {
+  flex-basis: 15%;
+  transition: 0.3s;
+  margin: 10px;
+}
+main #technologies article:hover {
+  transform: translateY(-25px);
+  transition: 0.3s;
+}
+main #technologies article img {
+  width: 120px;
+  height: 120px;
+  display: block;
+  margin: auto;
+}
+main #technologies article h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  margin: 15px 0px;
 }
 main #jobs {
   margin-top: 50px;
@@ -315,40 +322,33 @@ main #jobs details:hover {
   border: 15px solid var(--yellow);
   border-radius: 15px;
 }
-main #technologies {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+main #motivation {
   margin: 50px 0px;
+  padding: 0px 100px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 0.5fr 1.5fr;
+  grid-template-areas: "img h2" "img p";
 }
-main #technologies h2 {
-  flex-basis: 100%;
+main #motivation h2 {
+  grid-area: h2;
   font-family: "Nunito", sans-serif;
   font-size: 50px;
-  text-align: left;
-  padding-left: 100px;
-  margin: 50px 0px 100px;
+  text-align: right;
+  padding-right: 50px;
+  margin: 50px 0px 50px;
 }
-main #technologies article {
-  flex-basis: 15%;
-  transition: 0.3s;
-  margin: 10px;
+main #motivation p {
+  grid-area: p;
+  font-family: "Sarala", sans-serif;
+  font-size: 18px;
+  text-align: right;
+  padding-right: 50px;
+  padding-left: 40px;
 }
-main #technologies article:hover {
-  transform: translateY(-25px);
-  transition: 0.3s;
-}
-main #technologies article img {
-  width: 120px;
-  height: 120px;
-  display: block;
-  margin: auto;
-}
-main #technologies article h3 {
-  font-family: "Nunito", sans-serif;
-  font-size: 25px;
-  text-align: center;
-  margin: 15px 0px;
+main #motivation img {
+  grid-area: img;
+  width: 20vw;
 }
 main .swiper .mySwiper {
   width: 100%;
@@ -396,16 +396,83 @@ main .swiper .swiper-slide .text a {
   text-decoration: none;
   margin: 15px 15px 0px 0px;
 }
+main #contact {
+  height: 60vh;
+  position: relative;
+  display: grid;
+  place-content: center;
+}
+main #contact::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url(imgs/outline-we.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  -ms-transform: translate(-50%, -45%);
+}
+main #contact::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url(imgs/elements.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 400px;
+  position: absolute;
+  z-index: 1;
+  animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    scale: 1;
+  }
+  50% {
+    transform: rotate(180deg);
+    scale: 1.5;
+  }
+  75% {
+    transform: rotate(270deg);
+    scale: 1.5;
+  }
+  100% {
+    transform: rotate(360deg);
+    scale: 1;
+  }
+}
+main #contact h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  animation: rotate 0.5s linear 2s;
+}
 
 footer {
   width: 100vw;
-  height: 40vh;
+  min-height: 60vh;
   margin: auto;
-  padding: 30px 15vw;
+  padding: 30px;
   background-color: var(--grey);
   border-bottom: 10px solid var(--yellow);
   position: relative;
   overflow: hidden;
+}
+footer::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url(imgs/outline-we.svg);
+  background-repeat: no-repeat;
+  background-position: contain;
+  background-size: 1000px;
+  position: absolute;
+  left: 300px;
+  top: 300px;
 }
 footer h2 {
   font-family: "Nunito", sans-serif;
@@ -434,8 +501,167 @@ footer ul li img {
   filter: invert(94%) sepia(0%) saturate(1900%) hue-rotate(151deg) brightness(90%) contrast(97%);
 }
 
-/*
-@import 'style-1650';
-@import 'style-1250';
-@import 'style-990';
-*//*# sourceMappingURL=style.css.map */
+@media screen and (max-width: 1650px) {
+  #banner {
+    background-size: 450px !important;
+  }
+  #banner h1 {
+    margin: 0px !important;
+  }
+  #banner p {
+    margin: 20px 0px 0px 0px !important;
+    max-width: 400px !important;
+  }
+  #banner button {
+    margin: 50px auto 0px !important;
+  }
+}
+@media screen and (max-width: 1250px) {
+  #banner {
+    background-size: 300px !important;
+  }
+  #banner h1 {
+    font-size: 100px !important;
+  }
+  #banner p {
+    margin: 10px 0px 0px 0px !important;
+    font-size: 16px !important;
+    max-width: 300px !important;
+  }
+  #banner button {
+    scale: 0.8;
+    margin: 30px auto 0px !important;
+  }
+  #jobs {
+    justify-content: center !important;
+  }
+  #jobs details {
+    flex-basis: 100% !important;
+  }
+  #motivation {
+    margin: 0px !important;
+    padding: 0px !important;
+    display: block !important;
+  }
+  #motivation p, #motivation img {
+    text-align: justify !important;
+    display: block !important;
+    margin: auto !important;
+  }
+  #motivation h2 {
+    text-align: center !important;
+    display: block !important;
+    padding-right: 0px !important;
+  }
+}
+@media screen and (max-width: 990px) {
+  header {
+    position: relative;
+  }
+  header nav {
+    background-color: transparent;
+  }
+  header nav ul li {
+    flex-basis: 100% !important;
+    text-align: center;
+    margin: 10px 20px !important;
+  }
+  main {
+    width: 100vw;
+  }
+  main #banner {
+    background-position: top !important;
+    justify-content: center !important;
+    align-content: center !important;
+  }
+  main #banner h1 {
+    margin-top: 150px !important;
+    text-align: center !important;
+    color: var(--white);
+  }
+  main #banner p {
+    color: var(--black) !important;
+    text-align: center !important;
+    max-width: 500px !important;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 25px;
+    border: 5px solid var(--yellow);
+  }
+  main #strengths h2 {
+    scale: 0.5;
+    text-align: center;
+    padding-left: 0px;
+    margin: 10px;
+  }
+  main #strengths article {
+    display: block;
+    flex-basis: 100%;
+    max-width: 60%;
+    margin: 40px auto;
+  }
+  main #schools h2 {
+    scale: 0.5;
+    text-align: center;
+  }
+  main #schools div h3, main #schools div p {
+    text-align: center;
+  }
+  main #schools div:hover {
+    scale: 1;
+    transform: none;
+  }
+  main #technologies h2 {
+    scale: 0.5;
+    text-align: center;
+    padding-left: 0px;
+  }
+  main #jobs h2 {
+    text-align: center;
+    scale: 0.5;
+  }
+  main #jobs > p {
+    padding: 0px 30px;
+  }
+  main #jobs details {
+    flex-basis: 100%;
+    border: 0px;
+  }
+  main #jobs details:hover {
+    scale: 1;
+    transform: none;
+    background-color: var(--yellow);
+    border: 15px solid var(--yellow);
+  }
+  main .swiper .mySwiper {
+    height: 100vh;
+  }
+  main .swiper .swiper-slide .title {
+    display: block;
+    text-align: center;
+    background-color: var(--yellow);
+    color: var(--black);
+    font-size: 30px;
+  }
+  main .swiper .swiper-slide .subtitle {
+    display: block;
+    text-align: center;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 12px;
+    margin-bottom: 50px;
+  }
+  main .swiper .swiper-slide .text {
+    opacity: 0.8;
+    text-align: center;
+  }
+  main .swiper .swiper-slide .text a {
+    margin: 15px auto;
+  }
+  main #contact {
+    height: 30vh;
+  }
+  main #contact::before, main #contact::after {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -64,14 +64,6 @@ const strengths = `
   </section>
 `
 
-const motivation = `
-  <section id="motivation">
-    <h2>motiváció</h2>
-    <p>Szerencsémre az elmúlt években rengeteg hozzám hasonló gondolkodású és kreatív emberrel dolgozhattam együtt, így csak a legritkább esetben éreztem a munkát tehernek. Sokkal inkább tekintettem rá, mint lehetőségre a tanuláshoz és a fejlődéshez, miközben remekül szórakozom, és kávézhatok is! A számomra ideális munkahelyen a feladatok összekötik az elemző és kreatív énemet, miközben egy energikus és jókedvű csapattal dolgozhatok együtt.</p>
-    <img src="style/imgs/motivation.gif" alt="motivation">
-  </section>
-`
-
 const schools = `
   <section id="schools">
     <h2>Tanulmányok</h2>
@@ -85,7 +77,7 @@ const schools = `
       </div>
       <div>
         <h3>2022 / Ruander Oktatóközpont <span># Kiadványszerkesztő</span></h3>
-        <p>Photoshop, Illustrator, InDesign szoftverek használata</p>
+        <p>Photoshop, Illustrator, InDesign szoftverek alapvető funkciói</p>
       </div>
       <div>
         <h3>2001 – 2005 / Magyar Hajózási Szakközépiskola és Szakiskola <span># Érettségi</span></h3>
@@ -94,49 +86,9 @@ const schools = `
   </section>
 `
 
-const jobs = `
-<section id="jobs">
-  <h2>Munkatapasztalat</h2>
-  <p>A szakközépiskolát befejezve nem tanultam tovább, fontosabbnak tartottam a tapasztalatszerzést, és kialakítani az anyagi függetlenségem.
-  A korai évek az útkeresésről szóltak. Nagyon élveztem a kis létszámú cégek családias hangulatát, amelyek segítettek alapvető képességeim felismerésében.</p>
-  <p>Később nyomdaipari területen helyezkedtem el, ahol korábbi tapasztalataimat hasznosítva már párhuzamosan több pozícióban is végeztem összetett feladatokat, ahogy azok a cég életében adódtak vagy szükségessé váltak. A grafikai tervezésre és a termékfejlesztésre egyre nagyobb szenvedéllyel tekintettem.</p>
-  <details>            
-    <summary><h3>Reklámeszköz.hu</h3></summary>
-    <h4>2012 - 2022<br>digitális nyomda & kiállítási eszközök gyártása és forgalmazása</h4>
-    <p>Az évek alatt több pozícióban is dolgoztam párhuzamosan.
-    Állandó szerepeim: <strong>projekt menedzser, értékesítési vezető, beszerzési vezető, operatív ügyvezető, termékfelelős. </strong>Alkalmanként pedig a kétkezi munkát sem vetettem meg: <strong>dekoratőrként</strong> is segítettem a projekteket, valamint marketing vezetőnket támogattam <strong>grafikai anyagok előállításával.</strong>
-    </p>
-  </details>
-  <details>            
-    <summary><h3>DisplayHáz</h3></summary>
-    <h4>2009 - 2012<br>digitális nyomda & kiállítási eszközök gyártása és forgalmazása</h4>
-    <p>Az akkor még kis családi cégben több szerepkörben is volt lehetőség bizonyítani. Elsősorban nyomdai <strong>projekt menedzserként</strong> dolgoztam, és a területtel kapcsolatos <strong>pénzügyi adminisztratív feladatokat</strong> láttam el. Saját műhelyben egyedi reklámberendezések gyártásában is részt vettem a <strong>tervezéstől a tesztelésig.</strong> A weboldal megújításánál pedig a fejlesztővel egyeztetést, a tartalom feltöltést és ahhoz szükséges <strong>grafikai munkákat</strong> vállaltam önként.
-    </p>
-  </details>
-  <details>
-    <summary><h3>Siffredi Productions</h3></summary>
-    <h4>2009<br>filmgyártás és forgalmazás külföldi piacra</h4>
-    <p>A budapesti irodában elsősorban <strong>személyi asszisztensként</strong>, utazások szervezésével és ad-hoc feladatok megoldásával foglalkoztam. A cég <strong>pénzügyi asszisztenseként</strong> minden napos volt a könyvelővel egyeztetés, és a banki ügyintézés.
-    </p>
-  </details>
-  <details>            
-    <summary><h3>EzIT</h3></summary>
-    <h4>2008 – 2009<br>szerverbérlés, domain szolgáltatások, hálózat karbantartás</h4>
-    <p>Szolgáltatásainkkal kapcsolatos alapvető <strong>ügyfélszolgálati</strong> feladatok ellátása mellett <strong>irodavezetőként</strong> feleltem a 10 fős iroda zavartalan működéséért is. Ügyvezető munkáját segítettem továbbá <strong>pénzügyi asszisztensként</strong>, valamint megismerkedtem a weboldal szerkesztés alapjaival, és néhány ügyfelünknek vállaltam <strong>tartalom feltöltést és formázást</strong> (wordPress).
-    </p>
-  </details>
-  <details>            
-    <summary><h3>Pharma Dekor</h3></summary>
-    <h4>2006 – 2008<br>POS kampány dekorációk készítése gyógyszertárakban</h4>
-    <p>Országos gyógyszertári kirakatok berendezésével és fóliázásában segítettem a céget <strong>dekoratőrként</strong>. A kirakatok mellett partnereink kiállítására is készítettünk stand dekorációkat. A 2-3 fős budapesti irodában <strong>irodavezetőként</strong> és <strong>rendszergazdaként </strong>is részt vettem a napi irodai életben.
-    </p>
-  </details>
-</section>
-`
-
 const technologies = `
 <section id="technologies">
-<h2>ismeretek ▼</h2>
+  <h2>ismeretek ▼</h2>
   <article>
     <img src="style/imgs/tech-logo/HTML5_logo-2.svg" alt="html">
     <h3>html</h3>
@@ -200,6 +152,54 @@ const technologies = `
 </section>
 `
 
+const jobs = `
+<section id="jobs">
+  <h2>Munkatapasztalat</h2>
+  <p>A szakközépiskolát befejezve nem tanultam tovább, fontosabbnak tartottam a tapasztalatszerzést, és kialakítani az anyagi függetlenségem.
+  A korai évek az útkeresésről szóltak. Nagyon élveztem a kis létszámú cégek családias hangulatát, amelyek segítettek alapvető képességeim felismerésében.</p>
+  <p>Később nyomdaipari területen helyezkedtem el, ahol korábbi tapasztalataimat hasznosítva már párhuzamosan több pozícióban is végeztem összetett feladatokat, ahogy azok a cég életében adódtak vagy szükségessé váltak. A grafikai tervezésre és a termékfejlesztésre egyre nagyobb szenvedéllyel tekintettem.</p>
+  <details>            
+    <summary><h3>Reklámeszköz.hu</h3></summary>
+    <h4>2012 - 2022<br>digitális nyomda & kiállítási eszközök gyártása és forgalmazása</h4>
+    <p>Az évek alatt több pozícióban is dolgoztam párhuzamosan.
+    Állandó szerepeim: <strong>projekt menedzser, értékesítési vezető, beszerzési vezető, operatív ügyvezető, termékfelelős. </strong>Alkalmanként pedig a kétkezi munkát sem vetettem meg: <strong>dekoratőrként</strong> is segítettem a projekteket, valamint marketing vezetőnket támogattam <strong>grafikai anyagok előállításával.</strong>
+    </p>
+  </details>
+  <details>            
+    <summary><h3>DisplayHáz</h3></summary>
+    <h4>2009 - 2012<br>digitális nyomda & kiállítási eszközök gyártása és forgalmazása</h4>
+    <p>Az akkor még kis családi cégben több szerepkörben is volt lehetőség bizonyítani. Elsősorban nyomdai <strong>projekt menedzserként</strong> dolgoztam, és a területtel kapcsolatos <strong>pénzügyi adminisztratív feladatokat</strong> láttam el. Saját műhelyben egyedi reklámberendezések gyártásában is részt vettem a <strong>tervezéstől a tesztelésig.</strong> A weboldal megújításánál pedig a fejlesztővel egyeztetést, a tartalom feltöltést és ahhoz szükséges <strong>grafikai munkákat</strong> vállaltam önként.
+    </p>
+  </details>
+  <details>
+    <summary><h3>Siffredi Productions</h3></summary>
+    <h4>2009<br>filmgyártás és forgalmazás külföldi piacra</h4>
+    <p>A budapesti irodában elsősorban <strong>személyi asszisztensként</strong>, utazások szervezésével és ad-hoc feladatok megoldásával foglalkoztam. A cég <strong>pénzügyi asszisztenseként</strong> minden napos volt a könyvelővel egyeztetés, és a banki ügyintézés.
+    </p>
+  </details>
+  <details>            
+    <summary><h3>EzIT</h3></summary>
+    <h4>2008 – 2009<br>szerverbérlés, domain szolgáltatások, hálózat karbantartás</h4>
+    <p>Szolgáltatásainkkal kapcsolatos alapvető <strong>ügyfélszolgálati</strong> feladatok ellátása mellett <strong>irodavezetőként</strong> feleltem a 10 fős iroda zavartalan működéséért is. Ügyvezető munkáját segítettem továbbá <strong>pénzügyi asszisztensként</strong>, valamint megismerkedtem a weboldal szerkesztés alapjaival, és néhány ügyfelünknek vállaltam <strong>tartalom feltöltést és formázást</strong> (wordPress).
+    </p>
+  </details>
+  <details>            
+    <summary><h3>Pharma Dekor</h3></summary>
+    <h4>2006 – 2008<br>POS kampány dekorációk készítése gyógyszertárakban</h4>
+    <p>Országos gyógyszertári kirakatok berendezésével és fóliázásában segítettem a céget <strong>dekoratőrként</strong>. A kirakatok mellett partnereink kiállítására is készítettünk stand dekorációkat. A 2-3 fős budapesti irodában <strong>irodavezetőként</strong> és <strong>rendszergazdaként </strong>is részt vettem a napi irodai életben.
+    </p>
+  </details>
+</section>
+`
+
+const motivation = `
+  <section id="motivation">
+    <h2>motiváció</h2>
+    <p>Szerencsémre az elmúlt években rengeteg hozzám hasonló gondolkodású és kreatív emberrel dolgozhattam együtt, így csak a legritkább esetben éreztem a munkát tehernek. Sokkal inkább tekintettem rá, mint lehetőségre a tanuláshoz és a fejlődéshez, miközben remekül szórakozom, és kávézhatok is! A számomra ideális munkahelyen a feladatok összekötik az elemző és kreatív énemet, miközben egy energikus és jókedvű csapattal dolgozhatok együtt.</p>
+    <img src="style/imgs/motivation.gif" alt="motivation">
+  </section>
+`
+
 const swiperWrapper = `
 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
   <div class="swiper-wrapper"></div>
@@ -239,6 +239,12 @@ const swiperCommunicator = () => {
     },
   });
 }
+
+const contact = `
+<section id="contact">
+  <h2>hello.</h2>
+</section>
+`
 
 // --------------- SELECTORS ---------------------------
   
@@ -339,6 +345,8 @@ const portfolioPageLoader = async () => {
 
 const contactPageLoader = () => {
   fixPageElements()
+  const main = document.querySelector('main')
+  main.insertAdjacentHTML('afterbegin', contact)
 }
 
 // --------------- ONLOADING --------------------------

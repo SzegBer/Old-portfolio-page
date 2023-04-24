@@ -1,33 +1,182 @@
 @media screen and (max-width: 990px) {
-  body {
-    width: 150vw;
-  }
+  
+  header {
+    position: relative;
 
+    nav {
+      background-color: transparent;
 
-  #banner {             // --- BANNER --- //
+      ul {
 
-    background-position: center !important;
-    justify-content: center !important;
-    align-content: center !important;
-
-    h1 {
-      margin-bottom: 130px !important;
-      text-align: center !important;
-    }
-
-    p {
-      color: var(--white) !important;
-      text-align: center !important;
-    }
-   
-    button {
-
-
+        li {
+          flex-basis: 100% !important;
+          text-align: center;
+          margin: 10px 20px !important;
+        }
+      }
     }
   }
 
+  main {
+    width: 100vw;
+
+
+    #banner {             // --- BANNER --- //
+
+      background-position: top !important;
+      justify-content: center !important;
+      align-content: center !important;
+
+      h1 {
+        margin-top: 150px !important;
+        text-align: center !important;
+        color: var(--white);
+      }
+
+      p {
+        color: var(--black) !important;
+        text-align: center !important;
+        max-width: 500px !important;
+        background-color: var(--white);
+        padding: 20px;
+        //margin: 0px !important;
+        border-radius: 25px;
+        border: 5px solid var(--yellow);
+      }
+    
+      button {
+
+
+      }
+    }
+
+    #strengths {          // --- STRENGTHS --- //
+
+
+      h2 {
+        scale: 0.5;
+        text-align: center;
+        padding-left: 0px;
+        margin: 10px;
+      }
+  
+      article {
+        display: block;
+        flex-basis: 100%;
+        max-width: 60%;
+        margin: 40px auto;
+      }
+    }
+  
+    #schools {            // --- SCHOOLS --- //
+
+      h2 {
+        scale: 0.5;
+        text-align: center;
+      }
+
+      div {
+
+        h3,p {
+          text-align: center;
+        }
+
+        &:hover {
+          scale: 1;
+          transform: none;
+        }
+      }
+    }
+
+    #technologies {       // --- TECHNOLOGIES --- //
+  
+      h2 {
+        scale: 0.5;
+        text-align: center;
+        padding-left: 0px;
+      }
+    }
+
+    #jobs {                // --- JOBS --- //
+  
+      h2 {
+        text-align: center;
+        scale: 0.5;
+      }
+
+      &>p {
+        padding: 0px 30px;
+      }
+
+      details {
+        flex-basis: 100%;
+        border: 0px;
+
+        p {
+          //padding: 0px 30px;
+        }
+
+        &:hover {
+          scale: 1;
+          transform: none;
+          background-color: var(--yellow);
+          border: 15px solid var(--yellow);
+        }
 
 
 
+      }
 
+    }
+
+    .swiper {             // --- SWIPER --- //
+    
+      .mySwiper {
+        height: 100vh;
+      }
+  
+      .swiper-slide {
+  
+        .parallax-bg {
+
+        }
+  
+        .title {
+          display: block;
+          text-align: center;
+          background-color: var(--yellow);
+          color: var(--black);
+          font-size: 30px;
+        }
+    
+        .subtitle {
+          display: block;
+          text-align: center;
+          background-color: var(--black);
+          color: var(--white);
+          font-size: 12px;
+          margin-bottom: 50px;
+        }
+    
+        .text {
+          opacity: 0.8;
+          text-align: center;
+  
+          a {
+            margin: 15px auto;
+          }  
+        }
+      }
+    }
+
+    #contact {            // --- CONTACT --- //
+
+      height: 30vh;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
 }

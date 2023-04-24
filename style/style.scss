@@ -28,6 +28,7 @@ font-family: 'Sarala', sans-serif;
 }
 
 body {
+
   width: 100vw;
   min-height: 100vh;
   height: 100%;
@@ -254,42 +255,6 @@ main {
     }
   }
 
-  #motivation {         // --- MOTIVATION --- //
-    margin: 50px 0px;
-    padding: 0px 100px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 0.5fr 1.5fr;
-    grid-template-areas: 
-    "img h2"
-    "img p";
-
-    h2 {
-      grid-area: h2;
-      font-family: 'Nunito', sans-serif;
-      font-size: 50px;
-      text-align: right;
-      padding-right: 50px;
-      margin: 50px 0px 50px;
-    }
-
-    p {
-      grid-area: p;
-      font-family: 'Sarala', sans-serif;
-      font-size: 18px;
-      text-align: right;
-      padding-right: 50px;
-      padding-left: 40px;
-    }
-
-    img {
-      grid-area: img;
-      width: 400px;
-    }
-
-
-  }
-
   #schools {            // --- SCHOOLS --- //
 
     margin-top: 50px;
@@ -334,74 +299,6 @@ main {
 
   }
 
-  #jobs {               // --- JOBS --- //
-
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 0px 40px;
-    min-height: 70vh;
-    
-
-    h2 {
-      flex-basis: 100%;
-      font-family: 'Nunito', sans-serif;
-      font-size: 50px;
-      text-align: right;
-      margin-bottom: 30px;
-    }
-
-    &>p {
-      flex-basis: 100%;
-      font-family: 'Sarala', sans-serif;
-      font-size: 16px;
-      text-align: justify;
-
-      &:nth-child(4) {
-        margin-bottom: 100px;
-      }
-    }
-
-    details {
-
-      flex-basis: 30%;
-      margin: 40px 0px;
-      cursor: pointer;
-      text-align: center;
-
-      border: 15px solid transparent;
-      
-      summary {
-
-        h3 {
-          font-family: 'Nunito', sans-serif;
-          font-size: 23px;
-        }
-      }
-
-      h4 {
-        font-family: 'Sarala', sans-serif;
-        font-size: 14px;
-      }
-
-      p {
-        font-family: 'Sarala', sans-serif;
-        font-size: 14px;
-        text-align: justify;
-        margin: 30px
-      }
-
-      &:hover {
-        scale: 1.2;
-        transform: translateY(-10px);
-        background-color: var(--yellow);
-        border: 15px solid var(--yellow);
-        border-radius: 15px;
-      }
-    }
-  }
-
   #technologies {       // --- TECHNOLOGIES --- //
     display: flex;
     flex-wrap: wrap;
@@ -443,15 +340,112 @@ main {
 
     }
   }
+
+  #jobs {               // --- JOBS --- //
+
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0px 40px;
+    min-height: 70vh;
+    
+
+    h2 {
+      flex-basis: 100%;
+      font-family: 'Nunito', sans-serif;
+      font-size: 50px;
+      text-align: right;
+      margin-bottom: 30px;
+    }
+
+    &>p {
+      flex-basis: 100%;
+      font-family: 'Sarala', sans-serif;
+      font-size: 16px;
+      text-align: justify;
+
+      &:nth-child(4) {
+        margin-bottom: 100px;
+      }
+    }
+
+    details {
+
+      flex-basis: 30%;
+      margin: 40px 0px;
+      cursor: pointer;
+      text-align: center;
+      border: 15px solid transparent;
+      
+      summary {
+
+        h3 {
+          font-family: 'Nunito', sans-serif;
+          font-size: 23px;
+        }
+      }
+
+      h4 {
+        font-family: 'Sarala', sans-serif;
+        font-size: 14px;
+      }
+
+      p {
+        font-family: 'Sarala', sans-serif;
+        font-size: 14px;
+        text-align: justify;
+        margin: 30px
+      }
+
+      &:hover {
+        scale: 1.2;
+        transform: translateY(-10px);
+        background-color: var(--yellow);
+        border: 15px solid var(--yellow);
+        border-radius: 15px;
+      }
+    }
+  }
+
+  #motivation {         // --- MOTIVATION --- //
+    margin: 50px 0px;
+    padding: 0px 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 0.5fr 1.5fr;
+    grid-template-areas: 
+    "img h2"
+    "img p";
+
+    h2 {
+      grid-area: h2;
+      font-family: 'Nunito', sans-serif;
+      font-size: 50px;
+      text-align: right;
+      padding-right: 50px;
+      margin: 50px 0px 50px;
+    }
+
+    p {
+      grid-area: p;
+      font-family: 'Sarala', sans-serif;
+      font-size: 18px;
+      text-align: right;
+      padding-right: 50px;
+      padding-left: 40px;
+    }
+
+    img {
+      grid-area: img;
+      width: 20vw;
+    }
+
+
+  }
   
   .swiper {             // --- SWIPER --- //
     
-    // html,
-    // body {
-    //   position: relative;
-    //   height: 100%;
-    // }
-
     .mySwiper {
       width: 100%;
       height: 800px;
@@ -508,20 +502,98 @@ main {
       }
     }
   }
+
+  #contact {            // --- CONTACT --- //
+    height: 60vh;
+    position: relative;
+    display: grid;
+    place-content: center;
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-image: url(imgs/outline-we.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 500px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -45%);
+      -ms-transform: translate(-50%, -45%);
+    }
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-image: url(imgs/elements.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 400px;
+      position: absolute;
+      z-index: 1;
+      animation: rotate 5s linear infinite;
+
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+        scale: 1;
+      }
+
+      50% {
+        transform: rotate(180deg);
+        scale: 1.5;
+      }
+
+      75% {
+        transform: rotate(270deg);
+        scale: 1.5;
+      }
+
+      100% {
+        transform: rotate(360deg);
+        scale: 1;
+      }
+    }
+    
+    h2 {
+      font-family: 'Nunito', sans-serif;
+      font-size: 50px;
+      animation: rotate 0.5s linear 2s;
+    }
+  }
 }
 
 
 footer {
   width: 100vw;
-  height: 40vh;
+  min-height: 60vh;
   margin: auto;
-  padding: 30px 15vw;
+  padding: 30px;
 
   background-color: var(--grey);
   border-bottom: 10px solid var(--yellow);
 
   position: relative;
   overflow: hidden;
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url(imgs/outline-we.svg);
+    background-repeat: no-repeat;
+    background-position: contain;
+    background-size: 1000px;
+    position: absolute;
+    left: 300px;
+    top: 300px;
+  }
+
 
   h2 {
     font-family: 'Nunito', sans-serif;
@@ -557,8 +629,7 @@ footer {
 }
 
 
-/*
+
 @import 'style-1650';
 @import 'style-1250';
 @import 'style-990';
-*/
