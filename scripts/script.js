@@ -201,7 +201,7 @@ const motivation = `
 `
 
 const swiperWrapper = `
-<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">jujjj
   <div class="swiper-wrapper"></div>
   <div class="swiper-button-next"></div>
   <div class="swiper-button-prev"></div>
