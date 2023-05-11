@@ -213,7 +213,7 @@ const swiperSlide = (data) => `
 <div class="swiper-slide">
 
   <div class="parallax-bg" style="
-  background-image: url(/style/imgs/portfolio${data.url});
+  background-image: url(./${data.url});
   " data-swiper-parallax="-23%"></div>
 
   <div class="title" data-swiper-parallax="-300">${data.title}</div>
@@ -293,7 +293,7 @@ const pacsiEventListener = () => {
 // --------------- FETCH DATA --------------------------
 
 const getPortfolioData = async () => {
-  const response = await fetch('./scripts/data/portfolio.JSON')
+  const response = await fetch('./portfolio.JSON')
   const data = await response.json()
   return data
 }
