@@ -17,8 +17,8 @@
   },
   {
     "title": "Logótervezés",
-    "subtitle": "sör sör sör sör!",
-    "paragraph": "Egy kedves barátom néhány éve kitanulta a sörfőző mesterséget. Szívesen kísérletezget a különböző sörfajtákkal és ízekkel. Én meg szívesen kóstolgatom. Szülinapjára terveztem meg ezt a néhány logó variációt, melyekből címkéket is készítettem neki. Az italok nem kerülnek kereskedelmi forgalomba, kizárólag otthoni fogyasztásra készülnek.",
+    "subtitle": "I ♥ BEER",
+    "paragraph": "Egy kedves barátom néhány éve kitanulta a sörfőző mesterséget. Szívesen kísérletezget a különböző sörfajtákkal és ízekkel, én meg szívesen kóstolgatom. Szülinapjára terveztem meg ezt a néhány logó variációt, melyekből címkéket is készítettem neki. Az italok nem kerülnek kereskedelmi forgalomba, kizárólag otthoni fogyasztásra készülnek.",
     "gitPage": "",
     "gitRepo": "",
     "url": "/03.png"
@@ -34,31 +34,15 @@
   {
     "title": "Logótervezés",
     "subtitle": "Mohács 500 logó és kisarculat pályázathoz",
-    "paragraph": "A Mohács500 logópályázatra benyújtott alkotásom. 2026-ban a Mohácsi csata 500. évfordulója alkalmából jelentős eseménysorozatra készül Mohács város önkormányzata. Az esemény főbb arculati elemeinek kidolgozása tárgyában kiírt pályázatra neveztem az itt látható logóval, mely a városban található Nemzeti Emlékhelyet jeleníti meg.",
+    "paragraph": "A Mohács500 logópályázatra benyújtott alkotásom. 2026-ban a Mohácsi csata 500. évfordulója alkalmából jelentős eseménysorozatra készül Mohács város önkormányzata.<br><br>Az esemény főbb arculati elemeinek kidolgozása tárgyában kiírt pályázatra neveztem az itt látható logóval.",
     "gitPage": "",
     "gitRepo": "",
     "url": "/05.png"
   },
   {
-    "title": "Képeslap",
-    "subtitle": "... Nekem a Balaton a Riviéra",
-    "paragraph": "Télen, amikor kevés a szín és hiányzik a fagylalt, akkor kinézek egy vidám színpalettát, és alkotok valami felpezsdítőt. Így született meg a balatoni vidám retro képeslap ötlete.",
-    "gitPage": "",
-    "gitRepo": "",
-    "url": "/06.png"
-  },
-  {
-    "title": "Arculattervezés",
-    "subtitle": "gakorlás, logo és arculat",
-    "paragraph": "Ha egyszer lesz éttermem, lehet, hogy szotyola bar lesz a neve.",
-    "gitPage": "",
-    "gitRepo": "",
-    "url": "/07.png"
-  },
-  {
     "title": "Web app - képgaléria",
     "subtitle": "swiperrel és feltöltési űrlappal",
-    "paragraph": "Gyakorlás eredménye a projekt, ismerkedés a node.js-sel. Képnézegető és képfeltöltő oldal, melyhez a backend oldali filekezelésre saját scriptet írtam.<br><br>Használt rendszerek: HTML, CSS, JavaScript, Node.js",
+    "paragraph": "Gyakorlás eredménye a projekt, ismerkedés a backend oldali filekezeléssel (npm express-fileupload). Képnézegető és képfeltöltő oldal, melyhez a backend oldali filekezelésre saját logikát írtam.<br><br>Használt rendszerek: HTML, CSS, JavaScript, Node.js: npm express, npm express-fileupload",
     "gitPage": "",
     "gitRepo": "<a target='_blank' href='https://github.com/SzegBer/img-gallery-with-backend'>Github</a>",
     "url": "/08.png"
@@ -66,15 +50,15 @@
   {
     "title": "NASA API",
     "subtitle": "Astronomy Picture of The Day",
-    "paragraph": "A népszerű képnézegető NASA API-hoz készítettem egy könnyen navigálható oldalt. A projekt a legelső ismerkedésem a fetch és APIk világával.<br><br>Használt rendszerek: HTML, CSS, JavaScript, Node.js",
+    "paragraph": "A népszerű képnézegető NASA API-hoz készítettem egy animációval is ellátott oldalt. A projekt a legelső ismerkedésem a fetch és APIk világával.<br><br>Használt rendszerek: HTML, CSS, JavaScript, Node.js",
     "gitPage": "<a target='_blank' href='https://szegber.github.io/just4fun-askNasa/'>Demo</a>",
     "gitRepo": "<a target='_blank' href='https://github.com/SzegBer/just4fun-askNasa'>Github</a>",
     "url": "/09.png"
   },
   {
-    "title": "Adatbázis lekérdezés",
+    "title": "Adatbáziskezelés",
     "subtitle": "adatok lekérdezése és beküldése",
-    "paragraph": "Ebben a gyakorló feladatban szöveges adatok lekérdezését és írását valósítom meg JSON fájlba egy egyszerű backend logika megírásával.<br><br>Használt rendszerek: HTML, CSS, JavaScript, Node.js<br><br>A demo oldalon az adatbázis nem hozzáférhető.",
+    "paragraph": "Ebben a gyakorló feladatban szöveges adatok lekérdezését és beküldését valósítom meg JSON fájlba egy egyszerű backend logika megírásával.<br><br>Használt rendszerek: HTML, CSS, JavaScript, Node.js: npm express<br><br>A gitHub pages demo oldalon az adatbázis nem hozzáférhető.",
     "gitPage": "<a target='_blank' href='https://szegber.github.io/a-simple-backend-server/frontend/'>Demo</a>",
     "gitRepo": "<a target='_blank' href='https://github.com/SzegBer/a-simple-backend-server'>Github</a>",
     "url": "/10.png"
