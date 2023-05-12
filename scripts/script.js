@@ -5,11 +5,17 @@ const header = `
   <header>
   <nav>
     <ul>
-      <li id="intro-menu">Bemutatkozás</li>
-      <li id="schools-menu">Tanulmányok</li>
-      <li id="jobs-menu">Munkatapasztalat</li>
-      <li id="works-menu">Referenciák</li>
-      <li id="contact-menu">Elérhetőségek</li>
+      <li id="intro-menu">intro</li>
+      <li id="schools-menu">tanulmányok</li>
+      <li id="jobs-menu">munkatapasztalat</li>
+      <li id="works-menu">referenciák</li>
+      <li id="contact-menu">kontakt</li>
+      <a target='_blank' href='https://www.linkedin.com/in/rendicsek/'>
+      <li><img src="style/imgs/icons/linkedin.svg" alt="linkedin"></li>
+    </a>
+    <a target='_blank' href='https://github.com/SzegBer'>
+      <li><img src="style/imgs/icons/github.svg" alt="github"></li>
+    </a>
     </ul>
   </nav>
   </header>
@@ -66,21 +72,21 @@ const strengths = `
 
 const schools = `
   <section id="schools">
-    <h2>Tanulmányok</h2>
+    <h2>tanulmányok</h2>
       <div>
-        <h3>2023 / Codecool <span># Junior Frontend fejlesztő</span></h3>
+        <h3><span>Junior Frontend fejlesztő</span><br>2023 / Codecool</h3>
         <p>HTML5, CSS3, SVG, JavaScript / EcmaScript, React.js, Node.js / NPM, Express.js, HTTP, Git, GitHub</p>
       </div>
       <div>
-        <h3>2022 / Ruander Oktatóközpont <span># Online Marketing Alapismeretek</span></h3>
+        <h3><span>Online Marketing Alapismeretek</span><br>2022 / Ruander Oktatóközpont</h3>
         <p>Facebook és Instagram hirdetések, Google Ads, Google Analytics and SEO alapok</p>
       </div>
       <div>
-        <h3>2022 / Ruander Oktatóközpont <span># Kiadványszerkesztő</span></h3>
+        <h3><span>Kiadványszerkesztő</span><br>2022 / Ruander Oktatóközpont</h3>
         <p>Photoshop, Illustrator, InDesign szoftverek alapvető funkciói</p>
       </div>
       <div>
-        <h3>2001 – 2005 / Magyar Hajózási Szakközépiskola és Szakiskola <span># Érettségi</span></h3>
+        <h3><span>Érettségi</span><br>2001 – 2005 / Magyar Hajózási Szakközépiskola és Szakiskola</h3>
         <p>Angol szak, műszaki tantárgyak (villamosságtan, műszaki rajz, műhely-gyakorlat)</p>
       </div>
   </section>
@@ -154,7 +160,7 @@ const technologies = `
 
 const jobs = `
 <section id="jobs">
-  <h2>Munkatapasztalat</h2>
+  <h2>munkatapasztalat</h2>
   <p>A szakközépiskolát befejezve nem tanultam tovább, fontosabbnak tartottam a tapasztalatszerzést, és kialakítani az anyagi függetlenségem.
   A korai évek az útkeresésről szóltak. Nagyon élveztem a kis létszámú cégek családias hangulatát, amelyek segítettek alapvető képességeim felismerésében.</p>
   <p>Később nyomdaipari területen helyezkedtem el, ahol korábbi tapasztalataimat hasznosítva már párhuzamosan több pozícióban is végeztem összetett feladatokat, ahogy azok a cég életében adódtak vagy szükségessé váltak. A grafikai tervezésre és a termékfejlesztésre egyre nagyobb szenvedéllyel tekintettem.</p>
@@ -320,9 +326,10 @@ const mainPageLoader = () => {
 const schoolsPageLoader = () => {
   fixPageElements()
   const main = document.querySelector('main')
-  main.insertAdjacentHTML('afterbegin', technologies)
-  main.insertAdjacentHTML('afterbegin', schools)
-}
+  main.insertAdjacentHTML('afterbegin', `<div id="studies"></div>`)
+  document.querySelector('#studies').insertAdjacentHTML('afterbegin', schools)
+  document.querySelector('#studies').insertAdjacentHTML('afterbegin', technologies)
+ }
 
 const jobsPageLoader = () => {
   fixPageElements()

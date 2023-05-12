@@ -72,29 +72,26 @@ header nav ul {
 header nav ul li {
   font-family: "Sarala", sans-serif;
   color: var(--black);
-  font-size: 18px;
+  font-size: 20px;
   list-style: none;
   display: inline-block;
   margin: 30px 20px;
-  border-bottom: 5px solid transparent;
+  padding: 5px 10px;
 }
-header nav ul li:hover:nth-child(1), header nav ul li:hover:nth-child(2), header nav ul li:hover:nth-child(3), header nav ul li:hover:nth-child(4) {
+header nav ul li img {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 4px;
+}
+header nav ul li:hover {
   cursor: pointer;
-  border-bottom: 5px solid var(--black);
-}
-header nav ul li:nth-child(5) {
-  font-size: 20px;
-  margin: 0;
-  padding: 28px 60px;
   color: var(--white);
-  background-image: url(imgs/panel.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-color: var(--black);
+  border-radius: 5px;
 }
-header nav ul li:nth-child(5):hover:nth-child(5) {
-  cursor: pointer;
-  background-size: 102%;
+header nav ul li:hover img {
+  filter: invert(83%) sepia(96%) saturate(2328%) hue-rotate(131deg) brightness(85%) contrast(87%);
 }
 
 main {
@@ -208,63 +205,67 @@ main #strengths article button.more:hover {
   transition: 0.3s;
   cursor: pointer;
 }
-main #schools {
-  margin-top: 50px;
+main #studies {
+  display: flex;
+  gap: 5%;
 }
-main #schools h2 {
+main #studies #schools {
+  margin-top: 50px;
+  flex-basis: 45%;
+}
+main #studies #schools h2 {
   font-family: "Nunito", sans-serif;
   font-size: 50px;
   text-align: right;
   margin-bottom: 30px;
 }
-main #schools div h3 {
+main #studies #schools div h3 {
   font-family: "Nunito", sans-serif;
   font-size: 23px;
   text-align: right;
 }
-main #schools div p {
+main #studies #schools div p {
   font-family: "Sarala", sans-serif;
   font-size: 18px;
   text-align: right;
   margin-bottom: 50px;
 }
-main #schools div:hover {
-  scale: 1.3;
-  transform: translateX(-150px);
+main #studies #schools div:hover {
+  scale: 1.1;
 }
-main #schools div:hover span {
+main #studies #schools div:hover span {
   color: var(--cyan);
 }
-main #technologies {
+main #studies #technologies {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-content: flex-start;
+  gap: 45px 10px;
   margin: 50px 0px;
+  flex-basis: 50%;
 }
-main #technologies h2 {
+main #studies #technologies h2 {
   flex-basis: 100%;
   font-family: "Nunito", sans-serif;
   font-size: 50px;
   text-align: left;
-  padding-left: 100px;
-  margin: 50px 0px 100px;
 }
-main #technologies article {
+main #studies #technologies article {
   flex-basis: 15%;
   transition: 0.3s;
-  margin: 10px;
 }
-main #technologies article:hover {
+main #studies #technologies article:hover {
   transform: translateY(-25px);
   transition: 0.3s;
 }
-main #technologies article img {
-  width: 120px;
-  height: 120px;
+main #studies #technologies article img {
+  width: 100px;
+  height: 100px;
   display: block;
   margin: auto;
 }
-main #technologies article h3 {
+main #studies #technologies article h3 {
   font-family: "Nunito", sans-serif;
   font-size: 25px;
   text-align: center;
@@ -349,6 +350,7 @@ main #motivation p {
 main #motivation img {
   grid-area: img;
   width: 20vw;
+  margin-top: 30px;
 }
 main .swiper .mySwiper {
   width: 100%;
@@ -566,10 +568,6 @@ footer ul li img {
     text-align: center;
     margin: 10px 20px !important;
   }
-  header nav ul li:hover {
-    border-bottom: 5px solid transparent !important;
-    background-size: auto !important;
-  }
   main {
     width: 100vw;
   }
@@ -604,20 +602,28 @@ footer ul li img {
     max-width: 60%;
     margin: 40px auto 0px;
   }
+  main #studies {
+    flex-wrap: wrap;
+  }
+  main #schools {
+    flex-basis: 100% !important;
+  }
   main #schools h2 {
     scale: 0.5;
-    text-align: center;
+    text-align: center !important;
   }
   main #schools div h3, main #schools div p {
-    text-align: center;
+    text-align: center !important;
   }
   main #schools div:hover {
-    scale: 1;
-    transform: none;
+    transform: none !important;
+  }
+  main #technologies {
+    flex-basis: 100% !important;
   }
   main #technologies h2 {
     scale: 0.5;
-    text-align: center;
+    text-align: center !important;
     padding-left: 0px;
   }
   main #jobs h2 {

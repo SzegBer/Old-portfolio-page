@@ -13,10 +13,6 @@
           text-align: center;
           margin: 10px 20px !important;
 
-          &:hover {
-            border-bottom: 5px solid transparent !important;
-            background-size: auto !important;
-          }
         }
       }
     }
@@ -71,32 +67,39 @@
         margin: 40px auto 0px;
       }
     }
+
+    #studies {
+      flex-wrap: wrap;
+    }
   
     #schools {            // --- SCHOOLS --- //
 
+      flex-basis: 100% !important;
+
       h2 {
         scale: 0.5;
-        text-align: center;
+        text-align: center !important;
       }
 
       div {
 
         h3,p {
-          text-align: center;
+          text-align: center !important;
         }
 
         &:hover {
-          scale: 1;
-          transform: none;
+          transform: none !important;
         }
       }
     }
 
     #technologies {       // --- TECHNOLOGIES --- //
   
+      flex-basis: 100% !important;
+
       h2 {
         scale: 0.5;
-        text-align: center;
+        text-align: center !important;
         padding-left: 0px;
       }
     }
