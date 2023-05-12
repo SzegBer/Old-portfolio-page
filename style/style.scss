@@ -37,7 +37,7 @@ body {
   &::before {
     content: '';
     width: 60%;
-    height: 60%;
+    height: 80%;
     background-image: url(imgs/outline-we.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -477,8 +477,7 @@ main {
   
       .text {
         font-family: 'Sarala', sans-serif;
-        background-color: var(--grey);
-        opacity: 0.7;
+        background-color: rgba($color: #8a8a8a, $alpha: 0.8);
         font-size: 14px;
         max-width: 300px;
         line-height: 1.5;

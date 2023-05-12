@@ -58,8 +58,8 @@
   {
     "title": "Adatbáziskezelés",
     "subtitle": "adatok lekérdezése és beküldése",
-    "paragraph": "Ebben a gyakorló feladatban szöveges adatok lekérdezését és beküldését valósítom meg JSON fájlba egy egyszerű backend logika megírásával.<br><br>Használt rendszerek: HTML, CSS, JavaScript, Node.js: npm express<br><br>A gitHub pages demo oldalon az adatbázis nem hozzáférhető.",
-    "gitPage": "<a target='_blank' href='https://szegber.github.io/a-simple-backend-server/frontend/'>Demo</a>",
+    "paragraph": "Ebben a gyakorló feladatban szöveges adatok lekérdezését és beküldését valósítom meg JSON fájlba egy egyszerű backend logika megírásával.<br><br>Használt rendszerek: HTML, CSS, JavaScript, Node.js: npm express",
+    "gitPage": "",
     "gitRepo": "<a target='_blank' href='https://github.com/SzegBer/a-simple-backend-server'>Github</a>",
     "url": "/10.png"
   }

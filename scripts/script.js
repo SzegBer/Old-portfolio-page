@@ -235,6 +235,7 @@ const swiperCommunicator = () => {
   const swiper = new Swiper(".mySwiper", {
     speed: 1000,
     parallax: true,
+    loop: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
