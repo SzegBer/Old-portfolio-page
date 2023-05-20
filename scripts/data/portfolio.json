@@ -62,5 +62,13 @@
     "gitPage": "",
     "gitRepo": "<a target='_blank' href='https://github.com/SzegBer/a-simple-backend-server'>Github</a>",
     "url": "/10.png"
+  },
+  {
+    "title": "Receptkereső React app",
+    "subtitle": "adatok lekérése API-ból és dinamikus komponens készítés",
+    "paragraph": "Legelső ismerkedésem a React-tal. A single page app egy REST API adatbázisból hív le adatokat a módosítható szűrési feltételeknek megfelelően. A szűrők egy belső adatbázisból dinamikusan frisstíhetőek.<br><br>Használt rendszerek: CSS, JavaScript, React, Node.js",
+    "gitPage": "<a target='_blank' href='https://recipes-react-app-szegber.netlify.app/'>Demo</a>",
+    "gitRepo": "<a target='_blank' href='https://github.com/SzegBer/recipes-react-app'>Github</a>",
+    "url": "/11.png"
   }
 ]
