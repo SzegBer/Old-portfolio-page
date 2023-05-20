@@ -233,8 +233,10 @@ const swiperSlide = (data) => `
 `
 const swiperCommunicator = () => {
   const swiper = new Swiper(".mySwiper", {
-    speed: 1000,
+    speed: 600,
     parallax: true,
+    spaceBetween: 30,//
+    effect: "fade",//
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
