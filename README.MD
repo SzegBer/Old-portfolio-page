@@ -7,7 +7,7 @@ My basic goal was to display the data of my CV in a tasteful manner and also pro
 
 ## Next on my ToDoList regarding this project:
 - Recreate the full website using React
-> wich is finished :) check it out: https://portfolio-4cf76.firebaseapp.com/
+> wich is finished :) check it out: https://portfolio-4cf76.web.app/
 
 ## Technologies used:
 - JavaScript / Sass / HTML 
